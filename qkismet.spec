@@ -7,12 +7,13 @@ Group:		Applications/Networking
 URL:		http://qkismet.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/qkismet/%{name}-%{version}.tar.bz2
 # Source0-md5:	4011311a03ffae7ee34fcd3059e2137c
-BuildRequires:	libstdc++-devel
-BuildRequires:	sed >= 4.0
-BuildRequires:	qt4-qmake
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
 BuildRequires:	QtNetwork-devel
+BuildRequires:	libstdc++-devel
+BuildRequires:	qt4-build
+BuildRequires:	qt4-qmake
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
